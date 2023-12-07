@@ -1,0 +1,178 @@
+#navigation-bar{
+    background-color: blueviolet;
+}
+
+#logo{
+    display: flex;
+    justify-content: center;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+h3{
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.navigation{
+    display: flex;
+    flex-direction : column;
+    justify-content : flex-end;
+    text-align:center;
+    gap : 2px;
+}
+
+#hasil-luas{
+    background:white;
+    padding: 5px;
+    cursor: pointer;
+}
+
+#hasil-keliling{
+    color:white;
+    padding :5px;
+    cursor: pointer;
+}
+
+.navigation> a{
+    text-decoration : none;
+}
+
+.title {
+    text-align: center;
+    background: blue;
+    padding: 8px;
+    color: antiquewhite;
+}
+
+.rumus {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+#infoluasSegitiga {
+    border-bottom: 2px solid darkgray;
+}
+
+#hitung-id{
+    background-color :rgb(240, 178, 65);
+}
+
+#label{
+    margin-bottom: 2px;
+    font-weight: bold;
+}
+
+.input-segitiga{
+    width: 85%;
+    padding: 5px;
+    border-radius: 4px;
+    border-color: blue;
+    margin: 3px;
+}
+
+.hitung-title {
+    text-align: center;
+    background: chocolate;
+    margin: 8px;
+    padding: 2px;
+}
+
+.hitung {
+    margin-top: 10px;
+    background-color:rgb(194, 15, 51);
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.btn{
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    border-radius: 10px;
+    border: none;
+}
+
+.hitung:hover{
+    background-color:rgb(221, 53, 86);
+}
+
+.hitung:active{
+    background-color:rgb(250, 87, 119);
+    transform: translateY(5px);
+}
+
+.reset{
+    margin-top: 10px;
+    background-color:rgb(155, 180, 15);
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+.reset:hover{
+    background-color:rgb(181, 207, 32);
+}
+
+.reset:active{
+    background-color:rgb(217, 243, 70);
+    transform: translateY(5px);
+}
+
+#infokelilingSegitiga {
+    border-bottom: 2px solid rgb(28, 181, 201);
+}
+
+@media only screen and (max-width: 550px){
+    #navigation-bar{
+        background-color: rgb(34, 124, 57);
+    }
+    .title {
+        text-align: center;
+        background: rgb(4, 169, 235);
+        padding: 8px;
+        color: antiquewhite;
+    }
+    #infoluasSegitiga{
+        border-bottom: 1px solid orange;
+    }
+    #infokelilingSegitiga {
+        border-bottom: 1px solid lawngreen;
+    }
+    #hitung-id{
+        background-color :rgb(52, 223, 151);
+    }
+    .hitung-title {
+        text-align: center;
+        background: rgb(112, 173, 14);
+        margin: 8px;
+        padding: 2px;
+    }
+    .hitung {
+        margin-top: 10px;
+        background-color:rgb(83, 16, 170);
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+    .hitung:hover{
+        background-color:rgb(104, 40, 189);
+    }
+    
+    .hitung:active{
+        background-color:rgb(145, 87, 221);
+        transform: translateY(5px);
+    }
+    .reset{
+        margin-top: 10px;
+        background-color:rgb(158, 18, 13);
+        padding: 5px 15px;
+        cursor: pointer;
+    }
+    .reset:hover{
+        background-color:rgb(187, 39, 34);
+    }
+    .reset:active{
+        background-color:rgb(207, 73, 69);
+        transform: translateY(5px);
+    }
+}
+

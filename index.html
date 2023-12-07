@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Segitiga(CalcuShape)</title>
+    <link rel ="stylesheet" href = "css/style.css">
+    <script src = "js/script.js"></script>
+</head>
+<body>
+    <header id="navigation-bar">
+        <h1 id="logo">CalcuShape</h2>
+        <h3>Hi everyone,Welcome to CalcuShape.
+        <br>Sebuah website app sederhana yang menyediakan kalkulator untuk menghitung volume,luas,keliling bangun datar dari 2D hingga 3D.
+        <br>Website ini membuat hidup kalian dalam persoalan matematika menjadi mudah (easy).Cocok bagi orang yang bingung/susah dalam pelajaran 
+            matematika/tentang bangun datar. Jadi anda tidak perlu khawatir hehe ;]
+        <br>CalcuShape ini hanya tersedia untuk menghitung luas dan keliling segitiga, sisa nya .-.
+        </h3>
+        <nav class="navigation">
+            <a href="#infoluasSegitiga" id="hasil-luas">Luas Segitiga</a>
+            <a href="#infokelilingSegitiga" id="hasil-keliling">Keliling Segitiga</a>
+        </nav>
+    </header>
+        <section id="infoluasSegitiga">
+            <h1 class ="title">Luas Segitiga</h1>
+            <img src = "https://www.advernesia.com/wp-content/uploads/2018/10/Segitiga.png" alt="Ini segitiga sembarangan" width ="450px" 
+            height ="350px">
+            <p>Rumus Luas Segitiga yaitu:</p>
+            <p class ="rumus">L= 1/2*a*t</p>
+            <p>Di mana:
+                <br>L = Luas segitiga
+                <br>a = Alas segitiga
+                <br>t = Tinggi segitiga
+            </p>
+        </section>
+        <section id = "hitung-id">
+            <h2 class="hitung-title">Hitung Luas Segitiga</h2>
+            <label for="alas" id="hitung-Luas">Alas segitiga:</label><br>
+            <input name ="alas" id = "alas" class="input-segitiga" placeholder="Masukkan nilai alas" type="number"> 
+            <br>
+            <label for="tinggi" id="hitung-Luas">Tinggi segitiga:</label><br>
+            <input name ="tinggi" id = "tinggi" class="input-segitiga" placeholder="Masukkan nilai tinggi" type="number"> 
+            <br>
+            <label for ="luas" id="hitung-Luas">Luas: </label><br>
+            <input name = "luas" id = "luas" class ="input-segitiga" disabled="true" type = "number">
+            <br>
+            <div class="btn">
+                <button class ="hitung" id = "hitungLuas" onclick = "hitungLuas()"> Hitung </button>
+                <input type="reset" class ="reset" onclick="clearFieldLuas()" value = "Reset">  
+                <br>
+            </div>
+        </section>
+        <section id="infokelilingSegitiga">
+            <h1 class ="title">Keliling Segitiga</h1>
+            <img src = "https://www.advernesia.com/wp-content/uploads/2018/10/Segitiga.png" alt="Ini segitiga sembarangan" width ="450px" 
+            height ="350px">
+            <p>Rumus Keliling Segitiga yaitu:</p>
+            <p class ="rumus">K= a+b+c</p>
+            <p>Di mana:
+                <br>K = Keliling segitiga
+                <br>a = Sisi A segitiga
+                <br>b = Sisi B segitiga
+                <br>c = Sisi C segitiga
+            </p>
+        </section>
+        <section id = "hitung-id">
+            <h2 class="hitung-title">Hitung Keliling Segitiga</h2>
+            <label for="sisiA" id="hitung-Keliling">Sisi A segitiga:</label><br>
+            <input name ="sisiA" id = "sisiA" class="input-segitiga"placeholder="Masukkan nilai sisi A" type="number"> 
+            <br>
+            <label for="sisiB" id="hitung-Keliling">Sisi B segitiga:</label><br>
+            <input name ="sisiB" id = "sisiB" class="input-segitiga" placeholder="Masukkan nilai sisi B" type="number"> 
+            <br>
+            <label for="sisiC" id="hitung-Keliling">Sisi C segitiga:</label><br>
+            <input name ="sisiC" id = "sisiC" class="input-segitiga" placeholder="Masukkan nilai sisi C" type="number"> 
+            <br>
+            <label for ="keliling" id="hitung-Keliling">Keliling: </label><br>
+            <input name = "keliling" id = "keliling" class ="input-segitiga" disabled="true" type = "number">
+            <br>
+            <div class="btn">
+                <button class = "hitung" id="hitungKeliling" onclick = "hitungKeliling()"> Hitung </button>
+                <input type="reset" class ="reset" onclick="clearFieldKeliling()" value="Reset"> 
+            </div>
+        </section>
+</body>
+</html>
